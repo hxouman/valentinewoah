@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Animation</title>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>console.clear()</script>
+
+    <div class="controls">
+        <div class="green">
+            Move the <b>green alpaca</b>
+            <div class="keys"><kbd data-key="1">1</kbd> & <kbd data-key="2">2</kbd></div>
+            <small>or mouse/touch</small>
+        </div>
+
+        <div class="mission">Help them <span class="throb">kiss</span>!</div>
+
+        <div class="pink">
+            Move the <b>pink alpaca</b> with 
+            <div class="keys"><kbd data-key="arrowleft">◀︎</kbd> & <kbd data-key="arrowright">▶</kbd></div>
+            <small>or mouse/touch</small>
+        </div>
+    </div>
+
+    <!-- 🖌️ Canvas for Rendering Alpacas -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- ✅ Move all scripts here to ensure they load properly -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
